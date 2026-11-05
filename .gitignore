@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Local data (rebuilt by scripts/bootstrap_data.py)
+data/
+*.duckdb
+*.duckdb.wal
+
+.DS_Store
