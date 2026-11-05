@@ -7,7 +7,7 @@
 OAI is a small federal contracting office. Its analysts field questions from contracting officers and leadership such as:
 
 - "Which vendors received the most DoD IT contract dollars in Oklahoma last fiscal year?"
-- "How has VA cloud spending changed over the last three years?"
+- "How has VA cloud spending changed over the last five years?"
 - "What is PSC DA01, and who are the top recipients under it at DHS?"
 
 Today an analyst answers each one by hand on USASpending.gov: build an Advanced Search, export a CSV, pivot it in Excel, then paste numbers into an email. A simple question takes 30 to 90 minutes. The steps are hard to repeat, and two analysts often get different numbers for the same question because they made different filter choices: fiscal or calendar year, awarding or funding agency, lifetime award value or obligations in the year.
@@ -58,7 +58,7 @@ OAI wants a **trustworthy assistant** that answers in plain English, **shows its
 
 ### In scope (v1)
 - Prime **contract** awards (types A, B, C, D) from USASpending.gov
-- 4 agencies (DoD, VA, DHS, GSA) × 3 fiscal years (FY2024 to FY2026), IT-focused NAICS by default. All of this is configurable.
+- 4 agencies (DoD, VA, DHS, GSA) × 5 fiscal years (FY2022 to FY2026), IT-focused NAICS by default. All of this is configurable.
 - Questions about totals, top-N rankings, period-over-period changes, single awards, and NAICS/PSC code meanings
 - A chat UI for analysts, with an inspectable "How I got this answer" trail
 - An evaluation harness with a scorecard

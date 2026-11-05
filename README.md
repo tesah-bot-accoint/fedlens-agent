@@ -27,7 +27,7 @@ Full brief: [docs/engagement-brief.md](docs/engagement-brief.md)
 - Is a location the recipient's address or the place of performance?
 - What does a citation need to look like for you to paste the answer into a briefing?
 
-**In scope:** prime contracts (types A to D), DoD / VA / DHS / GSA, FY2024 to FY2026, IT-focused NAICS by default. All of it is configurable in [`config/scope.yaml`](config/scope.yaml).
+**In scope:** prime contracts (types A to D), DoD / VA / DHS / GSA, FY2022 to FY2026, IT-focused NAICS by default. All of it is configurable in [`config/scope.yaml`](config/scope.yaml).
 **Out of scope:** grants and loans, subawards, forecasting, questions about individuals, and **USPS** (it's exempt from the FAR, so USASpending coverage is too thin to trust).
 
 **Success criteria:**

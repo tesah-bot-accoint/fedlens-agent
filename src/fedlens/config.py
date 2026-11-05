@@ -1,11 +1,3 @@
-"""Runtime settings, read from environment variables (and an optional .env file).
-
-Secrets such as ANTHROPIC_API_KEY are only ever read from the environment, never from
-files committed to the repo.
-"""
-
-from __future__ import annotations
-
 from functools import lru_cache
 from pathlib import Path
 
@@ -15,7 +7,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_file=".env", env_prefix="", extra="ignore")
+    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
     anthropic_api_key: str | None = None
     fedlens_model: str = "claude-sonnet-5-5"

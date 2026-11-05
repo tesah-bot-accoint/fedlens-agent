@@ -1,25 +1,12 @@
-# Starter dataset scope. Edit this file (or point FEDLENS_SCOPE_FILE at another one)
-# to change what scripts/bootstrap_data.py pulls. See docs/decisions/002-data-grain.md.
+fiscal_years: [2022, 2023, 2024, 2025, 2026]
 
-# Federal fiscal years (FY2026 = 2025-10-01 through 2026-09-30).
-fiscal_years: [2024, 2025, 2026]
-
-# Awarding agencies, by USASpending toptier agency name.
-# USPS is intentionally absent: it is exempt from the FAR and does not report most
-# contracts to FPDS, so USASpending coverage is thin. See docs/engagement-brief.md.
 agencies:
   - Department of Defense
   - Department of Veterans Affairs
   - Department of Homeland Security
   - General Services Administration
 
-# Contract award types only (definitive contract, purchase order, delivery order, BPA call).
-# IDVs (IDV_*) are vehicles, not obligations, and would double count orders placed against them.
 award_type_codes: ["A", "B", "C", "D"]
 
-# Keep the starter set to IT and cloud work so it stays small enough for a laptop.
-# Set both lists to [] to pull every contract for the agencies above (very large for DoD).
-naics_codes:
-  - "5415"    # Computer systems design and related services (prefix)
-  - "518210"  # Computing infrastructure providers, data processing, web hosting
+naics_codes: ["5415", "518210"]
 psc_codes: []

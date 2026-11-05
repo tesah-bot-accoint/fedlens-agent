@@ -4,7 +4,7 @@
 - **Date:** 2026-11-05
 
 ## Context
-The question "how has VA cloud spending changed over 3 years?" sounds simple, but USASpending exposes two different dollar figures:
+The question "how has VA cloud spending changed over 5 years?" sounds simple, but USASpending exposes two different dollar figures:
 
 1. **Award Amount** on `spending_by_award`: the award's **lifetime** obligated total. A 5-year contract signed in FY2022 shows its full value whenever it matches a time filter, so summing award amounts by year double counts across years and assigns money to the wrong years.
 2. **Transaction Amount** on `spending_by_transaction`: the obligation (`federal_action_obligation`) of a **single action** (the base award or a modification) on a specific `Action Date`.
